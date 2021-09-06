@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+  </head>
+  <body>
+    <p>Pilih Warna Background</p>
+    <select id="mySelect" onchange="myFunction()">
+      <option value="red">Merah</option>
+      <option value="blue">Biru</option>
+      <option value="yellow">Kuning</option>
+      <option value="white">Putih</option>
+    </select>
+
+    <p id="warna">Saat Kamu Memilih Warna Background akan Berubah</p>
+
+    <script type="text/javascript">
+      function myFunction(){
+        var warna = document.getElementById("mySelect").value;
+        // document.getElementById("warna").innerHTML = warna;
+        document.body.style.backgroundColor = warna;
+      }
+    </script>
+  </body>
+</html>
